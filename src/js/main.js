@@ -1,11 +1,8 @@
+import genChilden from './parts/gen-children.js';
+import setup from './parts/setup-canvas-size.js';
+
+const children = genChilden(5);
+
 // get canvas context
 const ctx = canv.getContext('2d');
-
-// set canvas width and height for screen
-onload = onresize = () => {
-	const width = innerWidth / 1.2;
-	const height = innerHeight / 1.2;
-
-	canv.width = width;
-	canv.height = height;
-};
+setup(ctx, children);

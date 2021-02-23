@@ -1,1 +1,1 @@
-const ctx=canv.getContext("2d");onload=onresize=()=>{const n=innerWidth/1.2,t=innerHeight/1.2;canv.width=n,canv.height=t};
+import genChilden from"./parts/gen-children.js";import setup from"./parts/setup-canvas-size.js";const children=genChilden(5),ctx=canv.getContext("2d");setup(ctx,children);
