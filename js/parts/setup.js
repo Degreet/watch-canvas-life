@@ -14,7 +14,7 @@ export default function setup(ctx, children) {
 		setupChildrenIntervals(ctx, children);
 
 		const createChild = () => children.push(genChilden(1)[0]);
-		setInterval(createChild, 4000);
+		setInterval(createChild, 10000);
 		onkeydown = (e) => e.key == ' ' && createChild();
 	};
 }
