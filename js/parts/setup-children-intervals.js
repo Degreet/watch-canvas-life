@@ -1,7 +1,7 @@
 import renderChildren from './render-children.js';
 
 let lastTime;
-const speed = 20 / 1000;
+const speed = 2 / 1000;
 
 export default function setupChildrenIntervals(ctx, children) {
 	function start(timestamp) {
