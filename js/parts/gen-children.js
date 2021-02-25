@@ -2,8 +2,8 @@ import genColor from './gen-color.js';
 
 function genCoords() {
 	return {
-		x: Math.floor(Math.random() * canv.width),
-		y: Math.floor(Math.random() * canv.height),
+		x: Math.floor(Math.random() * (canv.width - 200) + 200),
+		y: Math.floor(Math.random() * (canv.height - 200) + 200),
 	};
 }
 
