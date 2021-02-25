@@ -1,2 +1,0 @@
-import genColor from"./gen-color.js";function genCoords(){return{x:Math.floor(Math.random()*canv.width),y:Math.floor(Math.random()*canv.height)}}function genRadius(){return Math.floor(10*Math.random()+5)}export default function genChilden(o){const n=[];for(let r=0;r<o;r++)n.push({...genCoords(),color:genColor(),radius:genRadius()});return n}
-//# sourceMappingURL=gen-children.js.map

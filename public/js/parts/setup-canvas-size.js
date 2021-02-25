@@ -1,1 +1,0 @@
-import renderChild from"./render-child.js";export default function setup(e,n){onload=onresize=()=>{const r=innerWidth/1.2,i=innerHeight/1.2;canv.width=r,canv.height=i,n.forEach((n=>renderChild(e,n)))}}

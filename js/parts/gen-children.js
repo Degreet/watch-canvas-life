@@ -7,7 +7,7 @@ function genCoords() {
 	};
 }
 
-function genRadius() {
+function genNum() {
 	return Math.floor(Math.random() * 10 + 5);
 }
 
@@ -18,7 +18,8 @@ export default function genChilden(count) {
 		children.push({
 			...genCoords(),
 			color: genColor(),
-			radius: genRadius(),
+			size: genNum(),
+			type: 'circle',
 		});
 	}
 
