@@ -19,7 +19,7 @@ export default function genChilden(count) {
 			...genCoords(),
 			color: genColor(),
 			size: genNum(),
-			type: 'circle',
+			type: 'triangle',
 		});
 	}
 
